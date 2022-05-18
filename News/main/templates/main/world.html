@@ -1,8 +1,8 @@
 {% extends "main/base.html" %}
 
 {% block app_content %}
-    <h1>Today Top News</h1>
-    {% for news in et_news %}
+    <h1>Today Top {{title}} News from BBC</h1>
+    {% for news in wo_news %}
         {% include "main/_news.html" %}
     {% endfor %}
 {% endblock %}
